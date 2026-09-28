@@ -51,7 +51,7 @@ def get_poi(category_id: int, page: int) -> None:
         headers = {
             'User-Agent': random.choice(user_agents),
             'Referer': 'https://m.weibo.cn',
-            "Cookie": "SCF=AslA_joc0x96zfUyHrhb7J2FAHHKtXWkijcx4b4EYkraHuvp8bIqAItUuMPMmSjO5BbFURgg2aA-iA8MJy5zt7E.; SUB=_2A25ELGMiDeThGeFK6loS8SjPzT6IHXVnQPrqrDV6PUJbktAYLWTDkW1NQ5N48YN_5-uVyvyi3PdVbWl90VBhWod9; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WF5EC_J4w8gToJs_rQjelE95NHD95QNSh2Re02ce0qEWs4Dqcjwi--ci-zfiKnpi--ciK.RiKLsi--4iKLFi-2RMg87; SSOLoginState=1764234098; ALF=1766826098; WEIBOCN_FROM=1110006030; _T_WM=60317140171; MLOGIN=1; XSRF-TOKEN=0f9028; mweibo_short_token=722475cc51; M_WEIBOCN_PARAMS=luicode%3D10000011%26lfid%3D100103type%253D1%2526q%253D%25E6%25AD%25A6%25E6%25B1%2589%26launchid%3D10000360-page_H5%26fid%3D100808916f62c08ed278214af3ab15296387ed_-_lbs%26uicode%3D10000011"
+            "Cookie": " "
 
         }
         response = requests.get(url=POI_LIST_URL, params=PARAMS,headers=headers)
@@ -68,7 +68,7 @@ def get_poi(category_id: int, page: int) -> None:
             # mobile
             search_headers = {
                 'User-Agent': "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1 Edg/142.0.0.0",
-                "Cookie": 'SINAGLOBAL=7951306511101.053.1741340374121; _s_tentry=cn.bing.com; Apache=6410232142157.472.1764228775287; ULV=1764228775300:11:1:1:6410232142157.472.1764228775287:1760350969742; PHPSESSID=a5515f5ac1b4de4baff8c1286a2dc737; ALF=02_1766826098; SCF=AslA_joc0x96zfUyHrhb7J2FAHHKtXWkijcx4b4EYkraHuvp8bIqAItUuMPMmSjO5LsK0WjWmbMTOCR64RYDOhg.; SUB=_2A25ELGMiDeThGeFK6loS8SjPzT6IHXVnQPrqrDV8PUJbkNAYLRfwkW1NQ5N48XOZmci0TYX6c_ledPoszEQnkCZn; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WF5EC_J4w8gToJs_rQjelE95NHD95QNSh2Re02ce0qEWs4Dqcjwi--ci-zfiKnpi--ciK.RiKLsi--4iKLFi-2RMg87; UOR=,,link.csdn.net',
+                "Cookie": '',
                 'Referer': 'https://place.weibo.com/wandermap/search',
             }
             response = requests.get(SEARCH_URL, params={'keyword': keyword}, headers=search_headers)
