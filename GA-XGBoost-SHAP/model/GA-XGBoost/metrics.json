@@ -1,0 +1,7 @@
+{
+  "train_score": 0.8567496162606889,
+  "test_score": 0.7824498072268382,
+  "best_cv_score": 0.7645381182338367,
+  "final_avg_cv_score": 0.763925541818179,
+  "total_generations": 100
+}
